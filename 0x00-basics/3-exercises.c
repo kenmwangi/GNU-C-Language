@@ -1,24 +1,30 @@
 #include <stdio.h>
 
 /*
- * print number - prints number entered by the user
- * Return 0: (Success)
+ * function prototype
  */
 
-void print_number()
+void check_even_or_odd(void)
 {
-	int i;
-	float f;
+	int num;
 
-	printf("Please enter an integer and a float: \n");
-	scanf("%d %f", &i, &f);
-	printf("Entered numbers are: %d %5.2f \n", i, f);
+	printf("Please enter any number to check if it's positive or negative: \n");
+	scanf("%d", &num);
+	
+	if ( num % 2 == 0)
+		printf("%d is Even Number. \n", num);
+	else
+		printf("%d is Odd Number. \n", num);
 
 }
 
-int main()
+/*
+ * Main function - returns 0 is success
+ */
+ int main (void)
 {
-	print_number();
+	// calling function
+	check_even_or_odd();
 
 	return (0);
 }
