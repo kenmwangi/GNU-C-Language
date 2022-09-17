@@ -10,7 +10,7 @@ CFLAGS = -g -Wall
 
 # build target executable 
 
-TARGET = myprog
+TARGET = 0x00_characters
 
 all: $(TARGET)
 
