@@ -4,7 +4,7 @@
 int main(void)
 {
 	char inChar = 'K';
-
+	char inLetter = 'C';
 	int digit = 2;
 
 	if (isalpha(inChar))
@@ -16,6 +16,22 @@ int main(void)
 	{
 		printf("A Number\n");
 	}
+
+	if ((inLetter >= 'A') && (inLetter <= 'Z'))
+	{
+		printf("Letter is uppercase\n");
+	}
+
+	if (isupper(inLetter))
+	{
+		printf("Letter is BETTER uppercase\n");
+	}
+
+	if (islower(inLetter))
+	{
+		printf("Letter is lowercase. \n");
+	} else 
+		printf("Letter is still UPPERCASE.\n");
 
 	return (0);
 }
